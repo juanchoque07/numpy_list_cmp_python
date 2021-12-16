@@ -17,10 +17,10 @@ if __name__ == '__main__':
     # 1)
     # Realizar una funcion lambda que eleve al cuadrado
     # el número pasado como parámetro
-
+    potencia_2 = lambda x: x**2
     # potencia_2 = lambda x:......
     # pot_3 = potencia_2(3)
-
+    print(potencia_2(3))
     # 2)
     # Utilice la función map para mapear una lambda expression
     # que retorne la potencia de 2 de cada numero en la lista numeros
@@ -36,5 +36,7 @@ if __name__ == '__main__':
     numeros = [1, -5, 4, 3]
 
     # numeros_potencia = list(map....)
-
+    numeros_potencia = list(map(lambda x: x**2,numeros))
+    print(numeros_potencia)
+    
     print("terminamos")
